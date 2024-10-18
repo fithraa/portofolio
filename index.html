@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(to right, #b3d9ff, #e6f7ff); 
+            background-size: auto, cover;
+            text-align: center;
+        }
+
+        .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: url('https://www.transparenttextures.com/patterns/paper.png'), #fff; /* Menambahkan gambar latar tekstur */
+        background-size: auto, cover; /* Mengatur ukuran gambar latar */
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        }
+
+
+        .profile-header {
+            background-color: #1e90ff; 
+            padding: 20px;
+            border-radius: 10px 10px 0 0; 
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+            border: 5px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        .name {
+            margin: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0 10px;
+        }
+
+        .profile-description,
+        .education-list,
+        .skills-list,
+        .image-gallery {
+            text-align: left;
+            margin: 0 auto;
+            text-align: justify;
+        }
+
+        .education-list,
+        .skills-list {
+            list-style-type: circle;
+            padding-left: 40px;
+        }
+
+        .skills-list li, .education-list li {
+            margin-bottom: 10px;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px; 
+            margin-top: 20px;
+        }
+
+        .image-item {
+            text-align: center;
+            width: 300px;
+            height: 300px;
+        }
+
+        .image-gallery img {
+            height: auto;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .image-description {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <img src="foto.jpeg" alt="Profile Image" class="profile-image">
+            <div class="name">Fithra Ahmad</div>
+        </div>
+
+        <div class="section-title" style="text-align: left;">Profil</div>
+        <p class="profile-description">Saya Fithra Ahmad anak kedua dari enam bersaudara. Tempat tinggal di Surabaya.
+            Hobi membaca dan mendengar lagu. Saya sedang menempuh pendidikan S1 di UPN Veteran Jawa Timur. Program studi informatika.
+            Bahasa pemrograman yang pernah saya pelajari adalah C, C++, Java, Python, dan JavaScript.</p>
+
+        <div class="section-title" style="text-align: left;">Pendidikan</div>
+        <ul class="education-list">
+            <li>UPN Veteran Jawa Timur
+                <p>Tahun 2022-2026</p>
+            </li>
+            <li>MA Negeri Surabaya
+                <p>Tahun 2019-2022</p>
+            </li>
+            <li>SMP Negeri Surabaya
+                <p>Tahun 2016-2019</p>
+            </li>
+            <li>SD Negeri Surabaya
+                <p>Tahun 2010-2016</p>
+            </li>
+        </ul>
+
+        <div class="section-title" style="text-align: left;">Keahlian</div>
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>NodeJS</li>
+            <li>ReactJS</li>
+            <li>MySQL</li>
+            <li>Express.JS</li>
+        </ul>
+
+        <div class="section-title">Portfolio</div>
+        <div class="image-gallery">
+            <div class="image-item">
+                <img src="web bus.PNG" alt="Gambar 1">
+                <div class="image-description">Aplikasi sederhana menggunakan bahasa Java dan tool NetBeans</div>
+            </div>
+            <div class="image-item">
+                <img src="apk dompetku.PNG" alt="Gambar 2" style="height: 150px; width: 150px;">
+                <div class="image-description">Web sederhana menggunakan bahasa PHP dan MySQL</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
